@@ -47,7 +47,7 @@ export function AccountImport(): JSX.Element {
         setEntityFound(false)
         if (mnemonic === '') {
             if (!IsValid256k1PrivateKey(secret)) {
-                setErrorMessage('秘密鍵の要件を満たしていません。秘密鍵でないか入力に誤りがあります。')
+                setErrorMessage('개인키 조건에 부합하지 않습니다. 개인키가 아니거나 입력에 오류가 있습니다.')
                 return
             }
             const key = LoadKey(secret)
@@ -62,7 +62,7 @@ export function AccountImport(): JSX.Element {
                 ccid = 'CC' + wallet.address.slice(2)
             } catch (e) {
                 console.log(e)
-                setErrorMessage('シークレットコードが正しくありません。')
+                setErrorMessage('시크릿 코드 오류류')
                 return
             }
         }
@@ -77,7 +77,7 @@ export function AccountImport(): JSX.Element {
                     setServer(entity.domain || 'hub.concurrent.world')
                     setEntityFound(true)
                 } else {
-                    setErrorMessage('お住まいのサーバーが見つかりませんでした。手動入力することで継続できます。')
+                    setErrorMessage('서버를 찾을 수 없습니다. 수동 입력으로 계속 진행 가능합니다.')
                 }
             })
         } catch (e) {
@@ -101,7 +101,7 @@ export function AccountImport(): JSX.Element {
                             if (unmounted) return
                             console.log(entity)
                             if (!entity || entity.ccid !== client.ccid) {
-                                setErrorMessage('指定のサーバーにあなたのアカウントは見つかりませんでした。')
+                                setErrorMessage('해당 서버에서 당신의 ID를 찾을 수 없었습니다.')
                                 return
                             }
                             setErrorMessage('')
@@ -110,13 +110,13 @@ export function AccountImport(): JSX.Element {
                         })
                         .catch((_) => {
                             if (unmounted) return
-                            setErrorMessage('指定のサーバーにあなたのアカウントは見つかりませんでした。')
+                            setErrorMessage('해당 서버에서 당신의 ID를 찾을 수 없었습니다.')
                         })
                     console.log(fqdn)
                 })
                 .catch((_) => {
                     if (unmounted) return
-                    setErrorMessage('指定のサーバーに接続できませんでした。')
+                    setErrorMessage('해당 서버에 접속할 수 없었습니다.')
                 })
         } catch (e) {
             console.log(e)
@@ -182,18 +182,18 @@ export function AccountImport(): JSX.Element {
                         gap: '20px'
                     }}
                 >
-                    <Typography variant="h3">シークレットコードから</Typography>
+                    <Typography variant="h3">시크릿 코드</Typography>
                     <TextField
-                        placeholder="12個の単語からなる呪文"
+                        placeholder="12개 단어로 이루어진 비밀 문구"
                         value={mnemonic}
                         onChange={(e) => {
                             setMnemonic(e.target.value)
                         }}
                     />
                     <Box>
-                        <Divider>または</Divider>
+                        <Divider>또는</Divider>
                     </Box>
-                    <Typography variant="h3">秘密鍵を直接入力</Typography>
+                    <Typography variant="h3">개인키를 직접 입력력</Typography>
                     <TextField
                         placeholder="0x..."
                         value={secret}
@@ -202,7 +202,7 @@ export function AccountImport(): JSX.Element {
                         }}
                     />
                     <Divider sx={{ my: '30px' }} />
-                    <Typography variant="h3">ドメイン</Typography>
+                    <Typography variant="h3">주소소</Typography>
                     <TextField
                         placeholder="https://example.tld/"
                         value={server}
@@ -224,9 +224,9 @@ export function AccountImport(): JSX.Element {
                             alignItems: 'center'
                         }}
                     >
-                        <Typography>まだアカウントを作ってない？</Typography>
+                        <Typography>아직 회원가입 하지 않으셨나요?</Typography>
                         <Button variant="contained" component={Link} to="/register">
-                            アカウントを作成
+                            회원 가입
                         </Button>
                     </Box>
                 </Paper>
