@@ -194,7 +194,7 @@ const mockData = [
                 profileOverride: {
                     username: 'CtrlAltDefeat_'
                 },
-                body: 'VRゲームの新作、現実感がすごい！酔わないよう気をつけないと。'
+                body: '새로 나온 VR게임 몰입감 쩌네 ㄷㄷ'
             },
             {
                 ...basicMessage,
@@ -209,7 +209,7 @@ const mockData = [
                 profileOverride: {
                     username: 'GamerGalaxy_'
                 },
-                body: '昨晩のオンラインバトル、完璧な連携だった。次も頼むぞ、チーム！'
+                body: '아까 연계 좋았다, 다음 판도 이렇게 가자!'
             },
             {
                 ...basicMessage,
