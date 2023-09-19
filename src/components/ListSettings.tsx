@@ -51,8 +51,8 @@ export function ListSettings(props: ListSettingsProps): JSX.Element {
                 p: 1
             }}
         >
-            <Typography variant="h2">リスト設定</Typography>
-            <Typography variant="h3">リスト名</Typography>
+            <Typography variant="h2">리스트 설정</Typography>
+            <Typography variant="h3">리스트 이름</Typography>
             <Box display="flex" flexDirection="row">
                 <TextField
                     label="list name"
@@ -77,7 +77,7 @@ export function ListSettings(props: ListSettingsProps): JSX.Element {
                     Update
                 </Button>
             </Box>
-            <Typography variant="h3">デフォルト投稿先</Typography>
+            <Typography variant="h3">기본 게시 도착</Typography>
             <Box
                 sx={{
                     display: 'flex',
@@ -99,7 +99,7 @@ export function ListSettings(props: ListSettingsProps): JSX.Element {
             </Box>
             {props.id !== 'home' && (
                 <>
-                    <Typography variant="h3">リストのピン</Typography>
+                    <Typography variant="h3">리스트 핀</Typography>
                     <Switch
                         checked={list.pinned}
                         onChange={(_) => {
@@ -118,7 +118,7 @@ export function ListSettings(props: ListSettingsProps): JSX.Element {
                             pref.setLists(JSON.parse(JSON.stringify(old)))
                         }}
                     >
-                        リストを削除
+                        리스트 삭제
                     </Button>
                 </>
             )}
@@ -130,8 +130,8 @@ export function ListSettings(props: ListSettingsProps): JSX.Element {
                 textColor="secondary"
                 indicatorColor="secondary"
             >
-                <Tab label="ストリーム" value="stream" />
-                <Tab label="ユーザー" value="user" />
+                <Tab label="스트림" value="stream" />
+                <Tab label="사용자자" value="user" />
             </Tabs>
             <List>
                 {tab === 'stream' &&
