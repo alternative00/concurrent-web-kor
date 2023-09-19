@@ -84,7 +84,7 @@ export default function AppMock(): JSX.Element {
 
 const mockData = [
     {
-        listTitle: 'ホーム',
+        listTitle: '홈',
         timeline: [
             {
                 ...basicMessage,
@@ -99,7 +99,7 @@ const mockData = [
                 profileOverride: {
                     username: 'solitudeSam'
                 },
-                body: 'この時間の静かさ、ほんとに好き。休日はひとりの時間が一番。'
+                body: '지금의 적막감이 정말 좋다. 휴일엔 혼자가 역시 최고지!'
             },
             {
                 ...basicMessage,
@@ -114,8 +114,8 @@ const mockData = [
                 profileOverride: {
                     username: 'geekyTom'
                 },
-                body: '音楽といえば、最近アニソンが頭から離れない。聴くとなんかテンション上がる。'
-            },
+                body: '음악하면 요즘 애니송이 머리 속에서 떠나질 않아. 들으면 뭔가 신남!',
+           },
             {
                 ...basicMessage,
                 author: {
