@@ -41,7 +41,7 @@ export const MessageHeader = (props: MessageHeaderProps): JSX.Element => {
                     {props.message.profileOverride?.username || props.message.author.profile?.username || 'anonymous'}
                 </Typography>
                 {myAck && (
-                    <Tooltip arrow title="Ackしています" placement="top">
+                    <Tooltip arrow title="Ack하고 있습니다." placement="top">
                         <CheckCircleIcon
                             sx={{
                                 fontSize: '1rem',
