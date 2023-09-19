@@ -257,7 +257,7 @@ export const GlobalActionsProvider = (props: GlobalActionsProps): JSX.Element =>
                         }}
                     >
                         <Typography>
-                            あなたのドメイン{client.api.host}は現在オフラインです。復旧までしばらくお待ちください。
+                            귀하의 주소{client.api.host}가 현재 오프라인입니다.복구까지 잠시만 기다려주세요.
                         </Typography>
                         <Button
                             variant="contained"
