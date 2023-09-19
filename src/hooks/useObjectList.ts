@@ -11,7 +11,7 @@ export interface IuseObjectList<T> {
 }
 
 interface objectListAction<T> {
-    // FIXME: これもっと賢い型の定義方法あったよね？
+    // FIXME: 더 나은 방법으로 정의할 수 있지 않습니까까？
     type: 'set' | 'push_front' | 'push_back' | 'concat' | 'update' | 'clear'
     argT?: T
     argTarr?: T[]
