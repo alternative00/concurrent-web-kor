@@ -49,7 +49,7 @@ export const GeneralSettings = (): JSX.Element => {
                                 }}
                             />
                         }
-                        label="글 작성란을을 상단에 표시"
+                        label="글 작성란을 상단에 표시"
                     />
                     <FormControlLabel
                         control={
