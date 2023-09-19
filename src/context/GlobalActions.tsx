@@ -279,19 +279,19 @@ export const GlobalActionsProvider = (props: GlobalActionsProps): JSX.Element =>
                         }}
                     >
                         <Typography variant="h2" component="div">
-                            アカウント設定を完了させましょう！
+                            계정 설정을 모두 완료하였습니다!
                         </Typography>
                         見つかった問題:
                         <ul>
-                            {!client?.user?.profile && <li>プロフィールが存在していません</li>}
-                            {!client?.user?.userstreams?.homeStream && <li>ホームストリームが存在していません</li>}
+                            {!client?.user?.profile && <li>프로필이 존재하지 않습니다.</li>}
+                            {!client?.user?.userstreams?.homeStream && <li>홈 스트림이 존재하지 않습니다.</li>}
                             {!client?.user?.userstreams?.notificationStream && (
-                                <li>通知ストリームが存在していません</li>
+                                <li>알림 스트림이 존재하지 않습니다.</li>
                             )}
                             {!client?.user?.userstreams?.associationStream && (
-                                <li>アクティビティストリームが存在していません</li>
+                                <li>활동 스트림이 존재하지 않습니다.</li>
                             )}
-                            {!client?.user?.userstreams?.ackCollection && <li>Ackコレクションが存在していません</li>}
+                            {!client?.user?.userstreams?.ackCollection && <li>Ack컬컬랙션이 존재하지 않습니다.</li>}
                         </ul>
                         <ProfileEditor
                             id={client?.user?.profile?.id}
