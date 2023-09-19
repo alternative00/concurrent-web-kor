@@ -244,7 +244,7 @@ export function EntityPage(): JSX.Element {
                                 }}
                             >
                                 <Typography variant="caption">
-                                    現住所: {user.domain !== '' ? user.domain : client.api.host}
+                                    현재 주소: {user.domain !== '' ? user.domain : client.api.host}
                                 </Typography>
                                 <Typography variant="caption">{user.ccid}</Typography>
                             </Box>
@@ -259,8 +259,8 @@ export function EntityPage(): JSX.Element {
                     textColor="secondary"
                     indicatorColor="secondary"
                 >
-                    <Tab label="カレント" />
-                    <Tab label="アクティビティ" />
+                    <Tab label="커런트" />
+                    <Tab label="액티비티티" />
                 </Tabs>
                 <Box /* timeline */
                     sx={{
