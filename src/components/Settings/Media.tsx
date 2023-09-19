@@ -38,10 +38,10 @@ export const MediaSettings = (): JSX.Element => {
                 gap: '1rem'
             }}
         >
-            <Typography variant="h3">画像投稿設定</Typography>
+            <Typography variant="h3">이미지 업로드 설정</Typography>
             <Typography>
-                Imgurに登録した後、<a href={'https://api.imgur.com/oauth2/addclient'}>このページ</a>
-                でアプリケーションを&quot;OAuth 2 authorization without a callback URL&quot;で作成してください。
+                Imgur를 통해서 업로드、<a href={'https://api.imgur.com/oauth2/addclient'}>페이지</a>
+                앱을 통해 업로드&quot;OAuth 2 authorization without a callback URL&quot;로 작성해주세요。
             </Typography>
             <Box>
                 <TextField
@@ -59,7 +59,7 @@ export const MediaSettings = (): JSX.Element => {
             <Divider />
 
             {/*
-            <Typography variant="h3">URLプレビュー設定</Typography>
+            <Typography variant="h3">URL미리보기 설정</Typography>
             <Typography>
                 URLプレビューに私用するAPIのURLを設定します。デフォルトでは、いずれアカウントのhostに移行する予定です。
             </Typography>
