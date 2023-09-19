@@ -129,7 +129,7 @@ const mockData = [
                 profileOverride: {
                     username: 'cozyCara'
                 },
-                body: '昼下がりの音楽セレクト、今日は何を聴こう。ちょっと悩むな。'
+                body: '낮 12시 음악 선택, 오늘은 뭘 듣지? 고민하지말자!'
             },
             {
                 ...basicMessage,
@@ -144,7 +144,7 @@ const mockData = [
                 profileOverride: {
                     username: 'bookwormLiz'
                 },
-                body: '新しい本が届いた！紅茶を淹れて読書の時間。最高の休日。'
+                body: '새 책 도착! 커피 한잔과 주말에 독서, 최고의 순간.'
             },
             {
                 ...basicMessage,
