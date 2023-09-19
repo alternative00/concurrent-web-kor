@@ -39,7 +39,7 @@ export const LogoutButton = (): JSX.Element => {
                         Are you sure?
                     </Typography>
                     <Typography sx={{ color: theme.palette.text.primary }}>
-                        秘密鍵のバックアップがないと、アカウントを復元できません。
+                        개인키를 보관하지 않으면 계정을 복원할 수 없습니다.
                     </Typography>
                     <Button
                         variant="contained"
