@@ -65,7 +65,7 @@ export const ApFollowManager = (): JSX.Element => {
             <Box display="flex" flexDirection={{ xs: 'column', sm: 'column', md: 'row' }} gap={1}>
                 <Box flex={1} display="flex" flexDirection="column" gap={1}>
                     <Box display="flex" alignItems="center" justifyContent="space-between" height="40px">
-                        <Typography variant="h2">{stats?.follows.length}フォロー</Typography>
+                        <Typography variant="h2">{stats?.follows.length}팔로우</Typography>
                         <IconButton
                             sx={{
                                 backgroundColor: 'primary.main',
@@ -97,7 +97,7 @@ export const ApFollowManager = (): JSX.Element => {
                 </Box>
                 <Box flex={1} display="flex" flexDirection="column" gap={1}>
                     <Box display="flex" alignItems="center" justifyContent="space-between" height="40px">
-                        <Typography variant="h2">{stats?.followers.length}フォロワー</Typography>
+                        <Typography variant="h2">{stats?.followers.length}팔로워</Typography>
                     </Box>
                     {stats?.followers.map((x) => (
                         <APUserCard key={x} url={x} />
@@ -111,7 +111,7 @@ export const ApFollowManager = (): JSX.Element => {
                 }}
             >
                 <Box display="flex" flexDirection="column" p={1} gap={1}>
-                    <Typography variant="h2">Activitypubユーザーのフォロー</Typography>
+                    <Typography variant="h2">Activitypub사용자의 팔로우</Typography>
                     <Divider />
                     <TextField
                         label="follow"
