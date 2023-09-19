@@ -159,12 +159,12 @@ const mockData = [
                 profileOverride: {
                     username: 'geekyTom'
                 },
-                body: '今日は久々に好きなアニメの再放送。これからまったり視聴タイム。'
+                body: '드라마 첫방이네, 본방 사수각 떳다!'
             }
         ]
     },
     {
-        listTitle: 'ゲーム界隈',
+        listTitle: '겜커런트트',
         timeline: [
             {
                 ...basicMessage,
@@ -179,7 +179,7 @@ const mockData = [
                 profileOverride: {
                     username: 'MechaMaster88'
                 },
-                body: '『魔界の冒険者』のセーブデータ、消失…。泣きたい。'
+                body: '<용의 전설> 세이브 파일 날라감...'
             },
             {
                 ...basicMessage,
