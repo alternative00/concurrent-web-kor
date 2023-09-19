@@ -232,7 +232,7 @@ export const MessageActions = (props: MessageActionsProps): JSX.Element => {
                             <ListItemIcon>
                                 <PlaylistRemoveIcon sx={{ color: 'text.primary' }} />
                             </ListItemIcon>
-                            <ListItemText>このStream에서 지우기</ListItemText>
+                            <ListItemText>このStream에서 제외외</ListItemText>
                         </MenuItem>
                     )}
                     {props.message.author.ccid === props.userCCID && (
@@ -244,7 +244,7 @@ export const MessageActions = (props: MessageActionsProps): JSX.Element => {
                             <ListItemIcon>
                                 <DeleteForeverIcon sx={{ color: 'text.primary' }} />
                             </ListItemIcon>
-                            <ListItemText>댓글 지우기</ListItemText>
+                            <ListItemText>댓글 삭제제</ListItemText>
                         </MenuItem>
                     )}
                 </Menu>
