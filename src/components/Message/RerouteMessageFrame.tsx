@@ -105,7 +105,7 @@ export const RerouteMessageFrame = (props: RerouteMessageFrameProp): JSX.Element
                     <ListItemIcon>
                         <ManageSearchIcon sx={{ color: 'text.primary' }} />
                     </ListItemIcon>
-                    <ListItemText>詳細</ListItemText>
+                    <ListItemText>자세히 보기</ListItemText>
                 </MenuItem>
                 {props.message.author.ccid === client?.user?.ccid && (
                     <MenuItem
@@ -116,7 +116,7 @@ export const RerouteMessageFrame = (props: RerouteMessageFrameProp): JSX.Element
                         <ListItemIcon>
                             <DeleteForeverIcon sx={{ color: 'text.primary' }} />
                         </ListItemIcon>
-                        <ListItemText>rerouteを削除</ListItemText>
+                        <ListItemText>reroute 지우기</ListItemText>
                     </MenuItem>
                 )}
             </Menu>
