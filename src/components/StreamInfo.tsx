@@ -109,13 +109,13 @@ export function StreamInfo(props: StreamInfoProps): JSX.Element {
                                     }}
                                 />
                             }
-                            label="検索可能"
+                            label="검색 가능"
                         />
                     </FormGroup>
-                    <Typography variant="h3">権限</Typography>
+                    <Typography variant="h3">권한</Typography>
                     <Box>
-                        <Typography>空の場合パブリックになります。</Typography>
-                        <Typography>改行区切りで複数人指定できます。</Typography>
+                        <Typography>공란으로 설정시 퍼블릭 모드로 자동설정됩니다.</Typography>
+                        <Typography>줄바꿈을 통해 여러명 지정이 가능합니다.</Typography>
                     </Box>
                     <TextField
                         label="writer"
@@ -133,8 +133,8 @@ export function StreamInfo(props: StreamInfoProps): JSX.Element {
                             setReaderDraft(e.target.value)
                         }}
                     />
-                    <Typography variant="h3">スキーマ</Typography>
-                    ※基本的に変更する必要はありません。
+                    <Typography variant="h3">스키마</Typography>
+                    ※기본적으로 변경하실 필요는 없습니다.
                     <TextField
                         label="Schema"
                         value={schemaDraft}
@@ -143,7 +143,7 @@ export function StreamInfo(props: StreamInfoProps): JSX.Element {
                         }}
                     />
                     <Box>
-                        <Typography variant="h3">属性</Typography>
+                        <Typography variant="h3">속성</Typography>
                         <CCEditor schemaURL={schemaDraft} init={stream.payload.body} onSubmit={updateStream} />
                     </Box>
                     <Button
@@ -151,11 +151,11 @@ export function StreamInfo(props: StreamInfoProps): JSX.Element {
                         color="error"
                         onClick={() => {
                             client.api.deleteStream(props.id).then((_) => {
-                                enqueueSnackbar('削除しました', { variant: 'success' })
+                                enqueueSnackbar('삭제되었습니다.', { variant: 'success' })
                             })
                         }}
                     >
-                        削除
+                        삭제제
                     </Button>
                 </Box>
             )}
