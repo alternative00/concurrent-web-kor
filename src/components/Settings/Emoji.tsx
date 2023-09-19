@@ -60,7 +60,7 @@ export const EmojiSettings = (): JSX.Element => {
 
     return (
         <>
-            <Typography variant="h3">이모티콘 팩</Typography>
+            <Typography variant="h3">이모지 팩</Typography>
             <Box
                 sx={{
                     display: 'grid',
@@ -78,75 +78,7 @@ export const EmojiSettings = (): JSX.Element => {
                                 flexDirection: 'row',
                                 alignItems: 'center',
                                 padding: '10px',
-                                gap: 1,
-                                height: '80px',
-                                position: 'relative',
-                                cursor: 'pointer'
-                            }}
-                            onClick={() => {
-                                navigator.clipboard.writeText(e.packageURL)
-                                enqueueSnackbar('복사 완료!', { variant: 'success' })
-                            }}
-                        >
-                            <Box display="flex">
-                                <Box component="img" src={e.iconURL} alt={e.name} height="60px" />
-                            </Box>
-                            <Typography variant="h4" gutterBottom>
-                                {e.name}
-                            </Typography>
-                            <IconButton
-                                onClick={() => {
-                                    pref.setEmojiPackages(pref.emojiPackages.filter((p) => p !== e.packageURL))
-                                }}
-                                sx={{
-                                    position: 'absolute',
-                                    top: '0px',
-                                    right: '0px'
-                                }}
-                            >
-                                <CancelIcon />
-                            </IconButton>
-                        </Paper>
-                    )
-                })}
-            </Box>
-
-            {preview && (
-                <Paper
-                    sx={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        alignItems: 'center',
-                        padding: '10px',
-                        gap: 1,
-                        height: '80px',
-                        justifyContent: 'space-between'
-                    }}
-                >
-                    <Box display="flex">
-                        <Box component="img" src={preview.iconURL} alt={preview.name} height="60px" />
-                    </Box>
-                    <Typography variant="h4" gutterBottom>
-                        {preview.name}
-                    </Typography>
-                    <IconButton
-                        onClick={() => {
-                            if (!packages.find((p) => p.packageURL === preview.packageURL)) {
-                                pref.setEmojiPackages([...pref.emojiPackages, addingPackageURL])
-                                setAddingPackageURL('')
-                                setPreview(null)
-                            } else {
-                                enqueueSnackbar('이미 추가되었습니다!', { variant: 'error' })
-                            }
-                        }}
-                    >
-                        <AddCircleIcon />
-                    </IconButton>
-                </Paper>
-            )}
-
-            <TextField
-                label="이모티콘 팩URL"
+                                ga지 팩URL"
                 placeholder="https://example.com/emoji.zip"
                 value={addingPackageURL}
                 onChange={(e) => {
