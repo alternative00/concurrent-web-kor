@@ -387,7 +387,7 @@ export const Draft = memo<DraftProps>((props: DraftProps): JSX.Element => {
             >
                 <Box>
                     <Tooltip
-                        title={pref.imgurClientID === '' ? '설정에서 이미지 업로드 설정을 완료하세요.' : '이미지 첨부'}
+                        title={pref.imgurClientID === '' ? '설정에서 이미지 업로드 설정을 진행행하세요.' : '이미지 첨부'}
                         arrow
                         placement="top"
                         enterDelay={pref.imgurClientID === '' ? 0 : 500}
@@ -430,7 +430,7 @@ export const Draft = memo<DraftProps>((props: DraftProps): JSX.Element => {
                             <Splitscreen sx={{ transform: 'rotate(90deg)', fontSize: '80%' }} />
                         </IconButton>
                     </Tooltip>
-                    <Tooltip title="絵文字" arrow placement="top" enterDelay={500}>
+                    <Tooltip title="이모지지" arrow placement="top" enterDelay={500}>
                         <IconButton
                             sx={{
                                 color: theme.palette.text.secondary
@@ -445,7 +445,7 @@ export const Draft = memo<DraftProps>((props: DraftProps): JSX.Element => {
                             <EmojiEmotions sx={{ fontSize: '80%' }} />
                         </IconButton>
                     </Tooltip>
-                    <Tooltip title="下書きを削除" arrow placement="top" enterDelay={500}>
+                    <Tooltip title="임시 작성성된 글을 지우기" arrow placement="top" enterDelay={500}>
                         <span>
                             <IconButton
                                 sx={{
