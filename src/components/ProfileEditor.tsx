@@ -115,7 +115,7 @@ export function ProfileEditor(props: ProfileEditorProps): JSX.Element {
                         updateProfile()
                     }}
                 >
-                    {props.id === undefined ? '글쓰기' : '업데이트'}
+                    {props.id === undefined ? 'New' : '업데이트'}
                 </Button>
             </Box>
         </Box>
