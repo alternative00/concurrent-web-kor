@@ -116,7 +116,7 @@ export const RerouteMessageFrame = (props: RerouteMessageFrameProp): JSX.Element
                         <ListItemIcon>
                             <DeleteForeverIcon sx={{ color: 'text.primary' }} />
                         </ListItemIcon>
-                        <ListItemText>reroute 지우기</ListItemText>
+                        <ListItemText>reroute 삭제</ListItemText>
                     </MenuItem>
                 )}
             </Menu>
