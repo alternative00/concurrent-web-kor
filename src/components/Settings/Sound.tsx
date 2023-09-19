@@ -13,8 +13,8 @@ export const SoundSettings = (): JSX.Element => {
             }}
         >
             <Box display="flex" flexDirection="column" gap={1}>
-                <Typography variant="h3">サウンド</Typography>
-                <Typography variant="h4">音量</Typography>
+                <Typography variant="h3">소리</Typography>
+                <Typography variant="h4">볼륨륨</Typography>
                 <Slider
                     aria-label="Volume"
                     value={pref.volume}
@@ -24,7 +24,7 @@ export const SoundSettings = (): JSX.Element => {
                 />
                 <Typography variant="h4">Override</Typography>
                 <TextField
-                    label="投稿音"
+                    label="내 게시물"
                     placeholder="https://example.com/sound.mp3"
                     value={pref.postSound}
                     onChange={(e) => {
@@ -32,7 +32,7 @@ export const SoundSettings = (): JSX.Element => {
                     }}
                 />
                 <TextField
-                    label="通知音"
+                    label="알림림"
                     placeholder="https://example.com/sound.mp3"
                     value={pref.notificationSound}
                     onChange={(e) => {
