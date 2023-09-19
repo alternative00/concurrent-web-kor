@@ -304,7 +304,7 @@ const mockData = [
                 profileOverride: {
                     username: 'BrewedLife'
                 },
-                body: '自家製のコールドブリュー、夏の定番。コーヒー豆の選び方が鍵。'
+                body: '여름엔 역시 수제 아이스 원두커피, 원두가 진짜 중요하다.'
             },
             {
                 ...basicMessage,
@@ -319,7 +319,7 @@ const mockData = [
                 profileOverride: {
                     username: 'CrispyCritic_'
                 },
-                body: 'お店で食べた焼き鳥、外はサクサク、中はジューシー。次は友達を連れて行く！'
+                body: '오늘 가게에서 먹은 치킨, 겉바속촉 끝판왕! 다음엔 친구 데려갈거임!'
             }
         ]
     }
