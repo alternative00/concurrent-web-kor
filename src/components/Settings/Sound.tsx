@@ -14,7 +14,7 @@ export const SoundSettings = (): JSX.Element => {
         >
             <Box display="flex" flexDirection="column" gap={1}>
                 <Typography variant="h3">소리</Typography>
-                <Typography variant="h4">볼륨륨</Typography>
+                <Typography variant="h4">볼륨</Typography>
                 <Slider
                     aria-label="Volume"
                     value={pref.volume}
@@ -32,7 +32,7 @@ export const SoundSettings = (): JSX.Element => {
                     }}
                 />
                 <TextField
-                    label="알림림"
+                    label="알림"
                     placeholder="https://example.com/sound.mp3"
                     value={pref.notificationSound}
                     onChange={(e) => {
