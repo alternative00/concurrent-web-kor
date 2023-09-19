@@ -38,7 +38,7 @@ export const GeneralSettings = (): JSX.Element => {
             <Divider />
 
             <Box>
-                <Typography variant="h3">基本</Typography>
+                <Typography variant="h3">기본 설정</Typography>
                 <FormGroup>
                     <FormControlLabel
                         control={
@@ -49,7 +49,7 @@ export const GeneralSettings = (): JSX.Element => {
                                 }}
                             />
                         }
-                        label="投稿エディタを上部に表示"
+                        label="포스팅 에디터를 상단에 표시"
                     />
                     <FormControlLabel
                         control={
@@ -60,7 +60,7 @@ export const GeneralSettings = (): JSX.Element => {
                                 }}
                             />
                         }
-                        label="投稿エディタを上部に表示 (モバイル)"
+                        label="포스팅 에디터를 상단에 표시(모바일)"
                     />
                     <FormControlLabel
                         control={
@@ -71,7 +71,7 @@ export const GeneralSettings = (): JSX.Element => {
                                 }}
                             />
                         }
-                        label="開発者モード"
+                        label="개발자 모드드"
                     />
                 </FormGroup>
             </Box>
@@ -148,11 +148,11 @@ export const GeneralSettings = (): JSX.Element => {
                                 setInvitationCode(jwt)
                             }}
                         >
-                            招待コードを生成
+                            초대코드 생성
                         </Button>
                     ) : (
                         <>
-                            <Typography variant="body1">招待コード(24時間有効)</Typography>
+                            <Typography variant="body1">초대코드(24시간동안 유효합니다.)</Typography>
                             <pre
                                 style={{
                                     whiteSpace: 'pre-wrap',
@@ -169,10 +169,10 @@ export const GeneralSettings = (): JSX.Element => {
                                 variant="contained"
                                 onClick={(_) => {
                                     navigator.clipboard.writeText(invitationCode)
-                                    enqueueSnackbar('コピーしました', { variant: 'success' })
+                                    enqueueSnackbar('복사되었습니다.', { variant: 'success' })
                                 }}
                             >
-                                招待コードをコピー
+                                초대코드 복사
                             </Button>
                         </>
                     )}
