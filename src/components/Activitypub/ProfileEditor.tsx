@@ -34,13 +34,13 @@ export const ApProfileEditor = (props: { entity: ApEntity }): JSX.Element => {
             .then(async (res) => await res.json())
             .then((data) => {
                 console.log(data)
-                enqueueSnackbar('更新成功', {
+                enqueueSnackbar('갱신 성공', {
                     variant: 'success'
                 })
             })
             .catch((e) => {
                 alert(e)
-                enqueueSnackbar('更新失败', {
+                enqueueSnackbar('에러', {
                     variant: 'error'
                 })
             })
@@ -130,7 +130,7 @@ export const ApProfileEditor = (props: { entity: ApEntity }): JSX.Element => {
                         updateProfile()
                     }}
                 >
-                    更新
+                    갱신신
                 </Button>
             </Box>
         </Box>
