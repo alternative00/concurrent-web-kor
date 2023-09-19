@@ -114,7 +114,7 @@ export function StreamInfo(props: StreamInfoProps): JSX.Element {
                     </FormGroup>
                     <Typography variant="h3">권한</Typography>
                     <Box>
-                        <Typography>공란으로 설정시 퍼블릭 모드로 자동설정됩니다.</Typography>
+                        <Typography>비워두면 퍼블릭 모드로 자동설정됩니다.</Typography>
                         <Typography>줄바꿈을 통해 여러명 지정이 가능합니다.</Typography>
                     </Box>
                     <TextField
@@ -155,7 +155,7 @@ export function StreamInfo(props: StreamInfoProps): JSX.Element {
                             })
                         }}
                     >
-                        삭제제
+                        삭제
                     </Button>
                 </Box>
             )}
