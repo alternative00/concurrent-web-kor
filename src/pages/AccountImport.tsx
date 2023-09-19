@@ -62,7 +62,7 @@ export function AccountImport(): JSX.Element {
                 ccid = 'CC' + wallet.address.slice(2)
             } catch (e) {
                 console.log(e)
-                setErrorMessage('시크릿 코드 오류류')
+                setErrorMessage('시크릿 코드 오류')
                 return
             }
         }
@@ -202,7 +202,7 @@ export function AccountImport(): JSX.Element {
                         }}
                     />
                     <Divider sx={{ my: '30px' }} />
-                    <Typography variant="h3">주소소</Typography>
+                    <Typography variant="h3">주소</Typography>
                     <TextField
                         placeholder="https://example.tld/"
                         value={server}
