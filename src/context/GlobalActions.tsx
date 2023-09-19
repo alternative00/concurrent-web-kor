@@ -281,7 +281,7 @@ export const GlobalActionsProvider = (props: GlobalActionsProps): JSX.Element =>
                         <Typography variant="h2" component="div">
                             계정 설정을 모두 완료하였습니다!
                         </Typography>
-                        見つかった問題:
+                        문제 발생!:
                         <ul>
                             {!client?.user?.profile && <li>프로필이 존재하지 않습니다.</li>}
                             {!client?.user?.userstreams?.homeStream && <li>홈 스트림이 존재하지 않습니다.</li>}
@@ -291,7 +291,7 @@ export const GlobalActionsProvider = (props: GlobalActionsProps): JSX.Element =>
                             {!client?.user?.userstreams?.associationStream && (
                                 <li>활동 스트림이 존재하지 않습니다.</li>
                             )}
-                            {!client?.user?.userstreams?.ackCollection && <li>Ack컬컬랙션이 존재하지 않습니다.</li>}
+                            {!client?.user?.userstreams?.ackCollection && <li>Ack컬렉렉션이 존재하지 않습니다.</li>}
                         </ul>
                         <ProfileEditor
                             id={client?.user?.profile?.id}
