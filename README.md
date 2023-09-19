@@ -1,12 +1,14 @@
-# Concurrent-world
-Concurrent-worldは分散マイクロブログ基盤である[Concurrent](https://github.com/totegamma/concurrent)のwebクライアント実装の1つです。
-現在は絶賛開発中で、最低限の機能しかありません。
+# Concurrent-world-kor
+Concurrent-world는 분산형 SNS 플랫폼입니다.[Concurrent](https://github.com/totegamma/concurrent)
+이 중 kor은 한글화 테스트용 포크 버전입니다.
 
-現在は [concurrent.world](https://concurrent.world)で公開されています。
+콘커런트는 [concurrent.world](https://concurrent.world)에서 확인하세요
 
 ### 世界は一つ
-Concurrentを始めるのに、所属するコミュニティを選ぶ必要はありません。 
-アカウントを作成すれば、誰とでもつながることができ、好きな話題同士で集まったコミュニティタイムライン(concurrentではストリームと呼びます)で交流できます。
+Concurrent는 따로 서버를 선택하지 않습니다.
+계정을 만들면 누구와도 연결이 가능하며
+주제별 그룹을 통해 타임라인(콘커런트에서는 stream)을 교류할 수 있습니다.
+
 
 ### 環境は無数
 発信する内容はどうしてもそのサーバーが設置してある国や、運用している団体により検閲・制限されてしまいます。
