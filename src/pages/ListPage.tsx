@@ -80,7 +80,7 @@ export function ListPage(props: ListPageProps): JSX.Element {
                         window.location.reload()
                     }}
                 >
-                    治す
+                    수정
                 </Button>
             </Box>
         )
@@ -201,7 +201,7 @@ export function ListPage(props: ListPageProps): JSX.Element {
                                     </Typography>
                                     <ExploreIcon sx={{ fontSize: '10rem', verticalAlign: 'middle' }} />
                                 </Button>
-                                <p>フォローするユーザー・ストリームを探しに行く</p>
+                                <p>스트림/유저 검색 및 팔로우</p>
                             </Box>
                         </Box>
                     )}
