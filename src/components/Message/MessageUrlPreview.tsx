@@ -118,11 +118,11 @@ export const UrlPreview = (props: { url: string }): JSX.Element | null => {
             />
             <Box padding={1} height="100px" overflow="hidden">
                 <Typography variant="h3" whiteSpace="nowrap" overflow="hidden" textOverflow="ellipsis" width="100%">
-                    {preview?.title ?? 'No Title'}
+                    {preview?.title ?? '제목 없음'}
                 </Typography>
 
                 <Typography variant="body2" width="100%" height="40px" textOverflow="ellipsis" overflow="hidden">
-                    {preview?.description ?? '説明はありません'}
+                    {preview?.description ?? '내용 없음'}
                 </Typography>
 
                 <Typography
