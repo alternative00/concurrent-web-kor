@@ -69,11 +69,11 @@ export function Explorer(): JSX.Element {
             .then((e: any) => {
                 const id: string = e.id
                 if (id) navigate('/stream#' + id)
-                else enqueueSnackbar('ストリームの作成に失敗しました', { variant: 'error' })
+                else enqueueSnackbar('스트림 생성에 실패했습니다.', { variant: 'error' })
             })
             .catch((e) => {
                 console.error(e)
-                enqueueSnackbar('ストリームの作成に失敗しました', { variant: 'error' })
+                enqueueSnackbar('스트림 생성에 실패했습니다.', { variant: 'error' })
             })
     }
 
@@ -188,7 +188,7 @@ export function Explorer(): JSX.Element {
                 }}
             >
                 <Typography variant="h3" gutterBottom>
-                    ストリーム
+                    스트림
                 </Typography>
                 <Button
                     variant="contained"
@@ -196,7 +196,7 @@ export function Explorer(): JSX.Element {
                         setDrawerOpen(true)
                     }}
                 >
-                    新しく作る
+                    신규 생성
                 </Button>
             </Box>
             <TextField
@@ -232,10 +232,10 @@ export function Explorer(): JSX.Element {
             >
                 <Box p={1}>
                     <Typography variant="h3" gutterBottom>
-                        ストリーム新規作成
+                        새로운 스트림 생성
                     </Typography>
                     <Typography variant="body1" gutterBottom>
-                        あなたの管轄ドメイン{client.api.host}に新しいストリームを作成します。
+                        당신의 주소{client.api.host}에 새로운 스트림을 생성합니다.
                     </Typography>
                     <Divider />
                     <CCEditor schemaURL={Schemas.commonstream} onSubmit={createNewStream} />
