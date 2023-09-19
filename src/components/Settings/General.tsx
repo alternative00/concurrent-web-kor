@@ -71,7 +71,7 @@ export const GeneralSettings = (): JSX.Element => {
                                 }}
                             />
                         }
-                        label="개발자 모드드"
+                        label="개발자 모드"
                     />
                 </FormGroup>
             </Box>
