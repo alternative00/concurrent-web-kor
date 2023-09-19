@@ -77,7 +77,7 @@ export function ListSettings(props: ListSettingsProps): JSX.Element {
                     Update
                 </Button>
             </Box>
-            <Typography variant="h3">기본 게시</Typography>
+            <Typography variant="h3">기본적으로 게시할 곳</Typography>
             <Box
                 sx={{
                     display: 'flex',
