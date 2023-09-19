@@ -38,7 +38,7 @@ export const StreamPicker = (props: StreamPickerProps): JSX.Element => {
                             {...params.InputProps}
                             {...rest}
                             sx={{ color: 'props.theme.palette.text.secondary' }}
-                            placeholder={props.selected.length === 0 ? '投稿先の選択…' : ''}
+                            placeholder={props.selected.length === 0 ? '어디에 게시할지 선택하세요' : ''}
                         />
                     )
                 }}
