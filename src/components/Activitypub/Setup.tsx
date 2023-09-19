@@ -48,92 +48,14 @@ export const ApSetup = (): JSX.Element => {
             return
         }
 
-        const followstream = await client.api.createStream(
-            Schemas.commonstream,
-            {
-                name: 'ActivityPub',
-                shortname: 'activitypub',
-                description: 'ActivityPub home stream'
-            },
-            {
-                reader: client?.user?.ccid ? [client?.user?.ccid] : [],
-                visible: false
-            }
-        )
-
-        const oldhome = pref.lists.home
-        if (oldhome) {
-            oldhome.streams.push(followstream.id)
-            pref.updateList('home', oldhome)
-        }
-
-        await client.api
-            .fetchWithCredential(client.api.host, `/ap/api/entity`, {
-                method: 'POST',
-                headers: {
-                    'content-type': 'application/json'
-                },
-                body: JSON.stringify({
-                    id: userID,
-                    homestream: client?.user?.userstreams?.homeStream,
-                    notificationstream: client?.user?.userstreams?.notificationStream,
-                    followstream: followstream.id
-                })
-            })
-            .then(async (res) => await res.json())
-            .catch((e) => {
-                enqueueSnackbar(`register entity failed: ${e}`, {
-                    variant: 'error'
-                })
-            })
-
-        await client.api
-            .fetchWithCredential(client.api.host, `/ap/api/person`, {
-                method: 'PUT',
-                headers: {
-                    'content-type': 'application/json'
-                },
-                body: JSON.stringify({
-                    id: userID,
-                    name: client?.user?.profile?.username,
-                    summary: client?.user?.profile?.description,
-                    icon_url: client?.user?.profile?.avatar
-                })
-            })
-            .then(async (res) => await res.json())
-            .catch((e) => {
-                enqueueSnackbar(`init profile failed: ${e}`, {
-                    variant: 'error'
-                })
-            })
-
-        window.location.reload()
-    }
-
-    return (
-        <Box display="flex" flexDirection="column" gap={1}>
-            <Typography>
-                ActivityPubにおけるIDを設定します。
-                <br />
-                一度登録すると変更できません
-                <br />
-            </Typography>
-            <TextField
-                label="UserID"
-                value={userID}
-                onChange={(x) => {
-                    setUserID(x.target.value)
-                }}
-                error={userID.length > 0 && !userID.match(/^[a-zA-Z0-9_]+$/)}
-                helperText={
-                    userID.length > 0 && !userID.match(/^[a-zA-Z0-9_]+$/) ? 'a-z, A-Z, 0-9, _が使用できます' : ''
+        const foll은(는) 사용할 수 있습니다' : ''
                 }
             />
             {entityFound && (
                 <Typography>
-                    このユーザーは既に登録されています。
+                    이 사용자는 이미 등록되어 있습니다.
                     <br />
-                    他のIDを試してください
+                    다른 ID를 사용하세요.
                 </Typography>
             )}
             <Button
@@ -143,7 +65,7 @@ export const ApSetup = (): JSX.Element => {
                 }}
                 disabled={userID.length === 0 || !userID.match(/^[a-zA-Z0-9_]+$/) || entityFound || loading}
             >
-                {loading ? '確認中...' : '登録'}
+                {loading ? '확인중중...' : '등록록'}
             </Button>
         </Box>
     )
