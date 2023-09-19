@@ -289,9 +289,9 @@ export const GlobalActionsProvider = (props: GlobalActionsProps): JSX.Element =>
                                 <li>알림 스트림이 존재하지 않습니다.</li>
                             )}
                             {!client?.user?.userstreams?.associationStream && (
-                                <li>활동 스트림이 존재하지 않습니다.</li>
+                                <li>액티비티 스트림이 존재하지 않습니다.</li>
                             )}
-                            {!client?.user?.userstreams?.ackCollection && <li>Ack컬렉렉션이 존재하지 않습니다.</li>}
+                            {!client?.user?.userstreams?.ackCollection && <li>Ack컬렉션이 존재하지 않습니다.</li>}
                         </ul>
                         <ProfileEditor
                             id={client?.user?.profile?.id}
