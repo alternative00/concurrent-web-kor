@@ -58,7 +58,7 @@ export const EmojiPickerProvider = (props: EmojiPickerProps): JSX.Element => {
             if (emojiPickerTab === 0) {
                 return 'Frequently Used'
             } else {
-                return emojiPackages[emojiPickerTab - 1]?.name ?? '設定から絵文字パッケージを追加しましょう'
+                return emojiPackages[emojiPickerTab - 1]?.name ?? '설정에서 이모지 팩을 추가하세요.'
             }
         }
     }, [emojiPickerTab, emojiPackages, query])
@@ -339,7 +339,7 @@ export const EmojiPickerProvider = (props: EmojiPickerProps): JSX.Element => {
                                 setAnchor(null)
                             }}
                         >
-                            絵文字を追加
+                            이모지 추가
                         </Button>
                     </Box>
                 </Popover>
