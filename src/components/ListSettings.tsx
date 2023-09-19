@@ -131,7 +131,7 @@ export function ListSettings(props: ListSettingsProps): JSX.Element {
                 indicatorColor="secondary"
             >
                 <Tab label="스트림" value="stream" />
-                <Tab label="사용자자" value="user" />
+                <Tab label="사용자" value="user" />
             </Tabs>
             <List>
                 {tab === 'stream' &&
