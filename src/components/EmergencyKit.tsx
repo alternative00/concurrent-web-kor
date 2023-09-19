@@ -29,7 +29,7 @@ export function EmergencyKit({ error }: FallbackProps): JSX.Element {
                 우선 새로고침하기
             </button>
             <h2>Medical Kit</h2>
-            <div>3回새로고침으로도 해결이 되지 않는다면↓</div>
+            <div>3회 이상 새로고침 해도 해결이 되지 않는다면↓</div>
             <div>
                 <button onClick={gracefulResetLocalStorage}>
                     계정 정보 이외의 localstorage 모두 초기화하기
