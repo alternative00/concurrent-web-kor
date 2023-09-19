@@ -164,7 +164,7 @@ const mockData = [
         ]
     },
     {
-        listTitle: '겜커런트트',
+        listTitle: '겜커런트',
         timeline: [
             {
                 ...basicMessage,
@@ -244,7 +244,7 @@ const mockData = [
         ]
     },
     {
-        listTitle: 'ごはん',
+        listTitle: '먹커런트',
         timeline: [
             {
                 ...basicMessage,
