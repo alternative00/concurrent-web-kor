@@ -267,7 +267,7 @@ export const Draft = memo<DraftProps>((props: DraftProps): JSX.Element => {
                         setSelected={setDestStreams}
                     />
                 </Box>
-                <Tooltip title={postHome ? 'ホーム同時投稿モード' : 'ストリーム限定投稿モード'} arrow placement="top">
+                <Tooltip title={postHome ? '홈/스트림 같이 게시하기' : '스트림 단독 게시하기기'} arrow placement="top">
                     <IconButton
                         onClick={() => {
                             setPostHome(!postHome)
@@ -317,7 +317,7 @@ export const Draft = memo<DraftProps>((props: DraftProps): JSX.Element => {
                         }
                     }}
                     onPaste={handlePasteImage}
-                    placeholder="今、なにしてる？"
+                    placeholder="지금 뭐해?"
                     autoFocus={props.autoFocus}
                     sx={{
                         width: 1,
@@ -387,7 +387,7 @@ export const Draft = memo<DraftProps>((props: DraftProps): JSX.Element => {
             >
                 <Box>
                     <Tooltip
-                        title={pref.imgurClientID === '' ? '設定から画像投稿設定をしてください' : '画像の添付'}
+                        title={pref.imgurClientID === '' ? '설정에서 이미지 업로드 설정을 완료하세요.' : '이미지 첨부'}
                         arrow
                         placement="top"
                         enterDelay={pref.imgurClientID === '' ? 0 : 500}
