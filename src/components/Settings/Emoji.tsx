@@ -47,7 +47,7 @@ export const EmojiSettings = (): JSX.Element => {
                     })
                     .catch(() => {
                         setPreview(null)
-                        enqueueSnackbar('パッケージが見つかりませんでした', { variant: 'error' })
+                        enqueueSnackbar('패키지를 찾을 수 없습니다.', { variant: 'error' })
                     })
             } else {
                 setPreview(null)
@@ -60,7 +60,7 @@ export const EmojiSettings = (): JSX.Element => {
 
     return (
         <>
-            <Typography variant="h3">絵文字パッケージ</Typography>
+            <Typography variant="h3">이모티콘 팩</Typography>
             <Box
                 sx={{
                     display: 'grid',
@@ -85,7 +85,7 @@ export const EmojiSettings = (): JSX.Element => {
                             }}
                             onClick={() => {
                                 navigator.clipboard.writeText(e.packageURL)
-                                enqueueSnackbar('コピーしました', { variant: 'success' })
+                                enqueueSnackbar('복사 완료!', { variant: 'success' })
                             }}
                         >
                             <Box display="flex">
@@ -136,7 +136,7 @@ export const EmojiSettings = (): JSX.Element => {
                                 setAddingPackageURL('')
                                 setPreview(null)
                             } else {
-                                enqueueSnackbar('すでに追加されています', { variant: 'error' })
+                                enqueueSnackbar('이미 추가되었습니다!', { variant: 'error' })
                             }
                         }}
                     >
@@ -146,7 +146,7 @@ export const EmojiSettings = (): JSX.Element => {
             )}
 
             <TextField
-                label="絵文字パッケージURL"
+                label="이모티콘 팩URL"
                 placeholder="https://example.com/emoji.zip"
                 value={addingPackageURL}
                 onChange={(e) => {
