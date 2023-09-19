@@ -61,7 +61,7 @@ export const MediaSettings = (): JSX.Element => {
             {/*
             <Typography variant="h3">URL미리보기 설정</Typography>
             <Typography>
-                URLプレビューに私用するAPIのURLを設定します。デフォルトでは、いずれアカウントのhostに移行する予定です。
+                URL 미리보기에 사용할 API의 URL을 설정합니다.기본적으로는 언젠가 계정의 host로 이전될 예정입니다.
             </Typography>
             <Box>
                 <TextField
