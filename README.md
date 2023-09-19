@@ -4,7 +4,7 @@ Concurrent-world는 분산형 SNS 플랫폼입니다.[Concurrent](https://github
 
 콘커런트는 [concurrent.world](https://concurrent.world)에서 확인하세요
 
-### 世界は一つ
+### 단일세계
 Concurrent는 따로 서버를 선택하지 않습니다.
 계정을 만들면 누구와도 연결이 가능하며
 주제별 그룹을 통해 타임라인(콘커런트에서는 stream)을 교류할 수 있습니다.
