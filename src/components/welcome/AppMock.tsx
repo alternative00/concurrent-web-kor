@@ -259,7 +259,7 @@ const mockData = [
                 profileOverride: {
                     username: 'TofuTribe'
                 },
-                body: '手作りのビーガン料理に挑戦中。今日はトマトとキヌアのサラダ。'
+                body: '수제 비건요리 도전 중, 오늘은 토마토 퀴노아 샐러드!'
             },
             {
                 ...basicMessage,
