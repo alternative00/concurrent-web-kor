@@ -17,7 +17,7 @@ export function EmergencyKit({ error }: FallbackProps): JSX.Element {
     return (
         <>
             <h1>Emergency!</h1>
-            どうしようもないエラーが発生しました。
+            알 수 없는 오류가 발생하였습니다.
             <br />
             {error?.message}
             <button
@@ -26,7 +26,7 @@ export function EmergencyKit({ error }: FallbackProps): JSX.Element {
                     window.location.reload()
                 }}
             >
-                とりあえずリロード
+                우선 새로고침하기
             </button>
             <h2>Medical Kit</h2>
             <div>3回くらいリロードしても解決しないなら↓</div>
