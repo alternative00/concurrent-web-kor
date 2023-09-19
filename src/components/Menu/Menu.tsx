@@ -196,7 +196,7 @@ export const Menu = memo<MenuProps>((props: MenuProps): JSX.Element => {
                             display: { xs: 'none', sm: 'flex' }
                         }}
                     >
-                        投稿する
+                        게시!
                     </Button>
                 )}
                 <Divider />
@@ -210,7 +210,7 @@ export const Menu = memo<MenuProps>((props: MenuProps): JSX.Element => {
                     }}
                 >
                     <Box sx={{ textAlign: 'center', fontWeight: 600, mb: 'env(safe-area-inset-bottom)' }}>
-                        開発中α版
+                        개발중인 α버전
                     </Box>
                     buildTime: {buildTime.toLocaleString()}
                     <br />
