@@ -274,7 +274,7 @@ const mockData = [
                 profileOverride: {
                     username: 'SpiceSeeker_'
                 },
-                body: '新しいスパイスショップを発見！エキゾチックな味で実験開始。'
+                body: '새로운 소스 출시, 이국적인 맛으로 만들 예정'
             },
             {
                 ...basicMessage,
@@ -289,7 +289,7 @@ const mockData = [
                 profileOverride: {
                     username: 'NoodleNomad'
                 },
-                body: '今日のラーメン、絶品だった。辛さがちょうど良い。'
+                body: '오늘, 매운 라면, 성공적.'
             },
             {
                 ...basicMessage,
