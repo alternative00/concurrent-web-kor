@@ -38,7 +38,7 @@ export const GeneralSettings = (): JSX.Element => {
             <Divider />
 
             <Box>
-                <Typography variant="h3">기본 설정</Typography>
+                <Typography variant="h3">일반</Typography>
                 <FormGroup>
                     <FormControlLabel
                         control={
@@ -49,7 +49,7 @@ export const GeneralSettings = (): JSX.Element => {
                                 }}
                             />
                         }
-                        label="포스팅 에디터를 상단에 표시"
+                        label="글 작성란을을 상단에 표시"
                     />
                     <FormControlLabel
                         control={
@@ -60,7 +60,7 @@ export const GeneralSettings = (): JSX.Element => {
                                 }}
                             />
                         }
-                        label="포스팅 에디터를 상단에 표시(모바일)"
+                        label="글 작성란을 상단에 표시(모바일)"
                     />
                     <FormControlLabel
                         control={
