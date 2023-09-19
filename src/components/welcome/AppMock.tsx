@@ -224,7 +224,7 @@ const mockData = [
                 profileOverride: {
                     username: 'retroReveler'
                 },
-                body: '古いアーケードゲームを発見。コイン入れてプレイする感覚、懐かしい。'
+                body: '오랜만에 오락실 게임기 발견, 동전 넣고 하던 시절 그립다. '
             },
             {
                 ...basicMessage,
@@ -239,7 +239,7 @@ const mockData = [
                 profileOverride: {
                     username: 'bitBard'
                 },
-                body: 'ゲームのOST集めるのが趣味。今日は新しい1枚ゲット！'
+                body: '게임 OST 모으는거 좋아합니다. 오늘도 새로 하나 샀습니다!'
             }
         ]
     },
