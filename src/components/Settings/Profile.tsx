@@ -16,7 +16,7 @@ export const ProfileSettings = (): JSX.Element => {
             }}
         >
             <Box>
-                <Typography variant="h3">プロフィール</Typography>
+                <Typography variant="h3">프로필</Typography>
                 <Box
                     sx={{
                         width: '100%',
@@ -28,7 +28,7 @@ export const ProfileSettings = (): JSX.Element => {
                         id={client?.user?.profile?.id}
                         initial={client?.user?.profile}
                         onSubmit={(_profile) => {
-                            enqueueSnackbar('更新しました', { variant: 'success' })
+                            enqueueSnackbar('변경 완료!', { variant: 'success' })
                         }}
                     />
                 </Box>
