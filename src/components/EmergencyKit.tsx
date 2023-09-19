@@ -29,17 +29,17 @@ export function EmergencyKit({ error }: FallbackProps): JSX.Element {
                 우선 새로고침하기
             </button>
             <h2>Medical Kit</h2>
-            <div>3回くらいリロードしても解決しないなら↓</div>
+            <div>3回새로고침으로도 해결이 되지 않는다면↓</div>
             <div>
                 <button onClick={gracefulResetLocalStorage}>
-                    アカウント情報以外のlocalstorageをすべてリセットする
+                    계정 정보 이외의 localstorage 모두 초기화하기
                 </button>
             </div>
             <div>
-                <button onClick={resetAllLocalstorage}>localStorageをすべてリセットする</button>
+                <button onClick={resetAllLocalstorage}>localStorage 전체 초기화</button>
             </div>
             <h2>Debug Info</h2>
-            <pre>{error ? error.stack : 'そんなものはない'}</pre>
+            <pre>{error ? error.stack : '존재하지 않습니다.'}</pre>
         </>
     )
 }
