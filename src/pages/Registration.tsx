@@ -157,12 +157,12 @@ export function Registration(): JSX.Element {
 
     const steps = [
         {
-            title: 'Concurrentアカウントを作成しましょう！',
+            title: 'Concurrent계정을 생성하세요！',
             component: (
                 <>
                     <Alert severity="info">
-                        <AlertTitle>Concurrentは現在開発中のソフトウェアです。</AlertTitle>
-                        絶賛機能追加途中で説明も少ないです。観光程度に遊んでもらえると嬉しいです！
+                        <AlertTitle>Concurrent는 현재 개발 중에 있습니다.</AlertTitle>
+                        우리는 새로운 기능을 추가하는 중이며 아직 설명이 부족합니다. 적당히 즐겨주시길 부탁드립니다!
                     </Alert>
 
                     <Box
@@ -199,7 +199,7 @@ export function Registration(): JSX.Element {
                                 setActiveStep(1)
                             }}
                         >
-                            IDカードを作成する
+                            ID카드 만들기
                         </Button>
                     </Box>
 
@@ -214,16 +214,16 @@ export function Registration(): JSX.Element {
                             bottom: '10px'
                         }}
                     >
-                        <Typography>もうアカウントを持っている？</Typography>
+                        <Typography>이미 계정이 있으신가요?</Typography>
                         <Button variant="contained" component={Link} to="/import">
-                            アカウントのインポート
+                            계정 가져오기
                         </Button>
                     </Box>
                 </>
             )
         },
         {
-            title: 'あなたのID',
+            title: '사용자자ID',
             component: (
                 <Box
                     sx={{
@@ -263,10 +263,10 @@ export function Registration(): JSX.Element {
                                 {CCID}
                             </Typography>
                         </Paper>
-                        <Typography>これは、Concurrentの世界であなたを特定する文字列です。</Typography>
+                        <Typography>이것은 Concurrent 세계에서 당신을 특정하는 문자열입니다. </Typography>
                         <Divider />
                         <Typography>
-                            次に、あなたがこのIDの持ち主であることを証明するためのシークレットコードを作成します。
+                            그런 다음 당신이 이 ID의 소유자임을 증명하기 위한 시크릿 코드를 작성합니다.
                         </Typography>
                         <Button
                             variant="contained"
@@ -274,14 +274,14 @@ export function Registration(): JSX.Element {
                                 setActiveStep(2)
                             }}
                         >
-                            Next: IDのシークレットコードの作成
+                            Next: ID의 시크릿 코드 작성
                         </Button>
                     </Box>
                 </Box>
             )
         },
         {
-            title: 'シークレットコード',
+            title: '시크릿 코드',
             component: (
                 <Box
                     sx={{
@@ -333,33 +333,33 @@ export function Registration(): JSX.Element {
                         }}
                         startIcon={<ContentPasteIcon />}
                     >
-                        シークレットコードをコピー
+                        시크릿 코드 복사하기
                     </Button>
                     <Typography>
-                        シークレットコードは、あなたが再ログインしたいとき、別の端末からログインしたいときに必要な呪文です。
+                       시크릿 코드는 재로그인 혹은 다른 기기에서 로그인 할때 필요한 코드입니다.
                     </Typography>
                     <Typography>
-                        <b>絶対に紛失しないように</b>そして、
-                        <b>絶対に誰にも知られないように</b>してください。
+                        <b>절대 분실하면 안됩니다</b>그리고、
+                        <b>절대 계정을 공유하지</b>않습니다.
                     </Typography>
                     <Typography>
-                        紛失すると、二度とあなたのアカウントにアクセスできなくなります。
-                        また、他人に知られると、あなたのアカウントがハッカーとの共有アカウントになってしまいます。
+                        분실시 두 번 다시 계정에 접속할 수 없습니다.
+                        또한 계정이 공개되면 당신의 계정이 해커와 공유될 수 있습니다.
                     </Typography>
-                    <Typography>メモを取りましたか？</Typography>
+                    <Typography>안전한 곳에 기록하셨나요?</Typography>
                     <Button
                         variant="contained"
                         onClick={(): void => {
                             setActiveStep(3)
                         }}
                     >
-                        Next: シークレットコードの確認
+                        Next: 시크릿 코드 확인
                     </Button>
                 </Box>
             )
         },
         {
-            title: 'シークレットコードの確認',
+            title: '시크릿 코드 확인',
             component: (
                 <Box
                     sx={{
@@ -370,7 +370,7 @@ export function Registration(): JSX.Element {
                     }}
                 >
                     <TextField
-                        placeholder="12個の単語からなる呪文"
+                        placeholder="12개의 단어로 이루어진 코드"
                         value={mnemonicTest}
                         onChange={(e) => {
                             setMnemonicTest(e.target.value)
@@ -379,7 +379,7 @@ export function Registration(): JSX.Element {
                             width: '100%'
                         }}
                     />
-                    {mnemonic === mnemonicTest ? '一致しています' : '一致していません'}
+                    {mnemonic === mnemonicTest ? '일치합니다.' : '일치하지 않습니다.'}
                     <Button
                         variant="contained"
                         disabled={mnemonic !== mnemonicTest}
@@ -387,13 +387,13 @@ export function Registration(): JSX.Element {
                             setActiveStep(4)
                         }}
                     >
-                        Next: ドメインの選択
+                        Next: 주소 선택
                     </Button>
                 </Box>
             )
         },
         {
-            title: 'ドメインの選択',
+            title: '주소 선택',
             component: (
                 <Box
                     sx={{
@@ -404,11 +404,11 @@ export function Registration(): JSX.Element {
                     }}
                 >
                     <Typography>
-                        あなたのメッセージを保存・配信してくれるドメインを探しましょう。
+                        여러분의 작성글을 저장 및 전송할 주소를 선택하세요.
                         <br />
-                        どのドメインを選択しても、だれとでもつながる事ができます。
+                        어떤 주소를 선택해도 모두와 연결할 수 있습니다.
                         <br />
-                        また、(鯖管が頑張れば)いつでも別のドメインに移行する事ができます。
+                        또한、(鯖管が頑張れば)언제든지 다른 도메인으로 이행할 수 있습니다.
                     </Typography>
                     <Alert severity="info">
                         <AlertTitle>ここで一度concurrent.worldからドメイン管轄サイトへ移動します</AlertTitle>
