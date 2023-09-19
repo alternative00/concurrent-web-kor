@@ -48,10 +48,10 @@ export function StreamInfo(props: StreamInfoProps): JSX.Element {
                     visible
                 })
                 .then((_) => {
-                    enqueueSnackbar('更新しました', { variant: 'success' })
+                    enqueueSnackbar('업데이트', { variant: 'success' })
                 })
                 .catch((_) => {
-                    enqueueSnackbar('更新に失敗しました', { variant: 'error' })
+                    enqueueSnackbar('업데이트 실패', { variant: 'error' })
                 })
         },
         [client.api, stream, writerDraft, readerDraft, schemaDraft, props.id, visible, enqueueSnackbar]
@@ -87,7 +87,7 @@ export function StreamInfo(props: StreamInfoProps): JSX.Element {
                     </Box>
                     <Typography variant="caption">{props.id}</Typography>
                     <Divider />
-                    <Typography>{stream.payload.body.description || 'まだ説明はありません'}</Typography>
+                    <Typography>{stream.payload.body.description || '아직 설명이 없습니다.'}</Typography>
                 </Paper>
             </Box>
             {isAuthor && (
