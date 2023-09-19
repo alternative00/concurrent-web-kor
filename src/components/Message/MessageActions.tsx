@@ -210,7 +210,7 @@ export const MessageActions = (props: MessageActionsProps): JSX.Element => {
                         <ListItemIcon>
                             <ContentPasteIcon sx={{ color: 'text.primary' }} />
                         </ListItemIcon>
-                        <ListItemText>ソースをコピー</ListItemText>
+                        <ListItemText>내용 복사</ListItemText>
                     </MenuItem>
                     <MenuItem
                         onClick={() => {
@@ -221,7 +221,7 @@ export const MessageActions = (props: MessageActionsProps): JSX.Element => {
                         <ListItemIcon>
                             <ManageSearchIcon sx={{ color: 'text.primary' }} />
                         </ListItemIcon>
-                        <ListItemText>詳細</ListItemText>
+                        <ListItemText>자세히 보기</ListItemText>
                     </MenuItem>
                     {service?.removeFromStream && props.message.author.ccid === props.userCCID && (
                         <MenuItem
@@ -232,7 +232,7 @@ export const MessageActions = (props: MessageActionsProps): JSX.Element => {
                             <ListItemIcon>
                                 <PlaylistRemoveIcon sx={{ color: 'text.primary' }} />
                             </ListItemIcon>
-                            <ListItemText>このStreamから削除</ListItemText>
+                            <ListItemText>このStream에서 지우기</ListItemText>
                         </MenuItem>
                     )}
                     {props.message.author.ccid === props.userCCID && (
@@ -244,7 +244,7 @@ export const MessageActions = (props: MessageActionsProps): JSX.Element => {
                             <ListItemIcon>
                                 <DeleteForeverIcon sx={{ color: 'text.primary' }} />
                             </ListItemIcon>
-                            <ListItemText>メッセージを削除</ListItemText>
+                            <ListItemText>댓글 지우기</ListItemText>
                         </MenuItem>
                     )}
                 </Menu>
