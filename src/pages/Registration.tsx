@@ -497,7 +497,7 @@ export function Registration(): JSX.Element {
             )
         },
         {
-            title: '프로필 작성성',
+            title: '프로필 작성',
             component: (
                 <Box
                     sx={{
