@@ -193,7 +193,7 @@ export default function Welcome(): JSX.Element {
                                 stream: {
                                     name: 'Dev Central',
                                     shortname: 'dev',
-                                    description: '개발자 쉼터터',
+                                    description: '개발자 쉼터',
                                     banner: 'https://cdn.discordapp.com/attachments/812107435833294868/1138082112646418463/IMG_1983.jpg',
                                     id: 'chrmsgep9dcl7anfkgcg@dev.concurrent.world',
                                     schema: '',
