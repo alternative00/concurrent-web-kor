@@ -436,8 +436,8 @@ export function Registration(): JSX.Element {
                                 </ListItemIcon>
                             </ListItemButton>
                         </List>
-                        <Divider>または</Divider>
-                        <Typography variant="h3">URLから直接入力</Typography>
+                        <Divider>또는</Divider>
+                        <Typography variant="h3">URL에서 직접 입력력</Typography>
                         <Typography
                             color="text.primary"
                             component={muiLink}
@@ -445,7 +445,7 @@ export function Registration(): JSX.Element {
                             href="https://github.com/totegamma/concurrent"
                             target="_blank"
                         >
-                            Tips: 自分でサーバーを建てる場合はこちら
+                            Tips: 직접 서버를 구축하려면 여기로
                         </Typography>
                         <Box flex="1" />
                         <Box sx={{ display: 'flex', gap: '10px' }}>
@@ -471,7 +471,7 @@ export function Registration(): JSX.Element {
                                 target="_blank"
                                 disabled={!host}
                             >
-                                登録ページへ
+                                등록 페이지로
                             </Button>
                         </Box>
                     </Box>
@@ -482,7 +482,7 @@ export function Registration(): JSX.Element {
                             checkRegistration()
                         }}
                     >
-                        ドメインの登録状況を確認
+                        주소 등록 현황 확인
                     </Button>
                     <Button
                         variant="contained"
@@ -491,13 +491,13 @@ export function Registration(): JSX.Element {
                             setActiveStep(5)
                         }}
                     >
-                        Next: プロフィールの作成
+                        Next: 프로필 작성
                     </Button>
                 </Box>
             )
         },
         {
-            title: 'プロフィールの作成',
+            title: '프로필 작성성',
             component: (
                 <Box
                     sx={{
@@ -507,7 +507,7 @@ export function Registration(): JSX.Element {
                         gap: '20px'
                     }}
                 >
-                    ここで名前・アイコン・自己紹介を設定します。
+                    이 곳에서 이름, 아이콘, 자기소개를 설정합니다.。
                     <Box
                         sx={{
                             width: '100%',
@@ -528,7 +528,7 @@ export function Registration(): JSX.Element {
             )
         },
         {
-            title: '準備完了!',
+            title: '준비 완료!',
             component: (
                 <>
                     <Box
@@ -560,7 +560,7 @@ export function Registration(): JSX.Element {
                         }}
                     >
                         <Button variant="contained" onClick={setupAccount}>
-                            はじめる
+                            시작하다.
                         </Button>
                     </Box>
                 </>
