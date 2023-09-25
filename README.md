@@ -16,12 +16,12 @@ Concurrent는 따로 서버를 선택하지 않습니다.
 컨커런트는 분산형이기 때문에 자신의 발언을 관리해줄 '호스트'를 직접 선택할 수 있습니다. 물론 호스트는 직접 만들 수도 있습니다!
 
 ## Getting Started
-### 前準備
-nodeとpnpmがインストールされている必要があります。  
+### 사전 설정
+node와 pnpm이 설치되어 있어야 합니다.
 
-> [volta](https://volta.sh/) を使うことをお勧めします。
+> [volta](https://volta.sh/) 를 사용하는 것이 좋습니다.
 > ```shell
-> # package.jsonで指定されているNode.jsをインストールする
+> # package.json에서 지정한 Node.js를 설치합니다.
 > volta install node
 > volta install pnpm
 > ```
@@ -30,28 +30,28 @@ nodeとpnpmがインストールされている必要があります。
 pnpm i
 ```
 
-### devビルド
+### dev빌드
 ```
 pnpm dev
 ```
-### 本番ビルド
+### 프로덕션 빌드
 ```
 pnpm build
 ```
 
-### schemaファイルの生成
-concurrentはサーバー間でやりとりするオブジェクトのIDと内容をjsonSchemaで担保しています。
-利用するjsonSchemaを`src/schemas.ts`で定義し、以下のコマンドを実行すると外部からjsonSchemaをダウンロードし、typescriptの型定義に変換した上で`src/schemas/`へ格納してくれます。
+### schema파일 생성
+concurrent는 서버 간에 주고받는 객체의 ID와 내용을 jsonSchema로 담보하고 있습니다.
+사용할 jsonSchema를 `src/schemas.ts`에서 정의하고, 아래 명령어를 실행하면 외부에서 jsonSchema를 다운로드하여 typescript의 타입 정의로 변환한 후 `src/schemas/`에 저장해줍니다.
 
 ```
 deno run -A collectSchemas.ts
 ```
 
-`dist/`下に成果物が出力されます。
+`dist/`아래에 결과물이 출력됩니다.
 
 ## Contributing
-現在は絶賛開発中な為、PR前にissueの起票をお願いします。
+현재 한창 개발 중이기 때문에 PR 전에 issue 기표를 부탁드립니다.
 
-大きいissueを除いて基本的にはissueとPRは1対1対応になるようにします。
+큰 issue를 제외하고 기본적으로 issue와 PR은 1:1로 대응하도록 하겠습니다.
 
-issueはその仕様が妥当かどうかの議論に、はPRその実装が妥当かどうかの議論に使います。
+issue는 해당 건의가 타당한지 아닌지, PR은 해당 건의의 구현이 가능한지 아닌지 논의할 때 사용합니다.
