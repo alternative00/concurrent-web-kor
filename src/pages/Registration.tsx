@@ -408,14 +408,14 @@ export function Registration(): JSX.Element {
                         <br />
                         어떤 주소를 선택해도 모두와 연결할 수 있습니다.
                         <br />
-                        또한、(鯖管が頑張れば)언제든지 다른 도메인으로 이행할 수 있습니다.
+                        또한、(서버 관리자)언제든지 다른 주소로 이행할 수 있습니다.
                     </Typography>
                     <Alert severity="info">
-                        <AlertTitle>ここで一度concurrent.worldからドメイン管轄サイトへ移動します</AlertTitle>
-                        ドメインでのアカウント作成後、またこのページに戻ってくる必要があります。このタブを閉じないでください。
+                        <AlertTitle>여기서 한번 concurrent.world에서 주소 관할 사이트로 이동합니다.</AlertTitle>
+                        주소에서 계정을 생성한 후 이 페이지로 다시 돌아와야 합니다. 이 탭을 닫지 마십시오.
                     </Alert>
                     <Box width="100%" display="flex" flexDirection="column">
-                        <Typography variant="h3">リストから選択</Typography>
+                        <Typography variant="h3">리스트에서 선택</Typography>
                         <List>
                             <ListItemButton
                                 component={Link}
