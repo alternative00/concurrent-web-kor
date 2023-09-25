@@ -148,11 +148,11 @@ export default function Welcome(): JSX.Element {
 
                     <Box flex={1}>
                         <Typography gutterBottom variant="h1">
-                            もうサーバーごとにアカウントを作る必要はありません
+                           이제 서버마다 계정을 만들 필요가 없습니다!
                         </Typography>
                         <Typography>
-                            従来の分散型SNSは、サーバーごとにアカウントを作る必要がありました。
-                            Concurrentは秘密鍵を使って、1つのアカウントで無数のサーバーに対して自己を証明できます。
+                            기존의 탈중앙화 SNS는 서버마다 계정을 만들어야 했습니다.
+                            Concurrent는 개인키를 사용하여 하나의 계정으로 수 많은 서버에 가입할 수 있습니다.
                         </Typography>
                     </Box>
                 </Box>
@@ -160,12 +160,12 @@ export default function Welcome(): JSX.Element {
                 <Box /* column */ display="flex" flexDirection={{ xs: 'column', sm: 'column', md: 'row' }} gap={2}>
                     <Box flex={1}>
                         <Typography gutterBottom variant="h1">
-                            話題ごとのタイムライン
+                           주제별 타임라인인
                         </Typography>
                         <Typography>
-                            Concurrentは「ストリーム」と呼ばれる、コミュニティタイムラインを自由に作成できます。
-                            従来SNSの、「このアカウントのフォロワーにこういう話をするのはちょっと・・・」という気持ちから複数アカウントを切り替える煩雑さからオサラバ。
-                            好きな話題を、ふわさしいストリームで興味のある人同士で集まって盛り上がりましょう。
+                            Concurrentは'스트림'이라고 부르는 커뮤니티 타임라인을 자유롭게 생성할 수 있습니다!
+                            기존 SNS에서 '이 계정의 팔로워에게 이런 이야기를 하는 것은 좀...'이라는 생각에 계정을 바꿔가며 이야기해야했던 것에서 벗어날 수 있습니다.
+                           좋아하는 주제를 가지고 관심있는 사람들끼리 모여 스트림에서 즐거운 시간을 보내봐요!
                         </Typography>
                     </Box>
                     <Box display="flex" flexDirection="column" flex={1} gap={1}>
@@ -175,7 +175,7 @@ export default function Welcome(): JSX.Element {
                                     name: 'Arrival Lounge',
                                     shortname: 'concurrent',
                                     description:
-                                        'hub.concurrent.worldサーバーへようこそ！わからない事があれば、ここで呟いてみましょう。',
+                                        'hub.concurrent.world서버에 오신 것을 환영합니다. 모르는 것은 이 곳에서서 물어보세요.
                                     banner: 'https://cdn.discordapp.com/attachments/812107435833294868/1138120758493708348/image.png',
                                     id: 'ci8qvhep9dcpltmfq3fg@hub.concurrent.world',
                                     schema: '',
@@ -193,7 +193,7 @@ export default function Welcome(): JSX.Element {
                                 stream: {
                                     name: 'Dev Central',
                                     shortname: 'dev',
-                                    description: '開発者の憩い場',
+                                    description: '개발자 쉼터터',
                                     banner: 'https://cdn.discordapp.com/attachments/812107435833294868/1138082112646418463/IMG_1983.jpg',
                                     id: 'chrmsgep9dcl7anfkgcg@dev.concurrent.world',
                                     schema: '',
@@ -211,7 +211,7 @@ export default function Welcome(): JSX.Element {
 
                 <Box display="flex" flexDirection="column" alignItems="center">
                     <Typography gutterBottom variant="h1">
-                        さあ、始めよう
+                        자, 시작하자!
                     </Typography>
                     <Button
                         variant="contained"
@@ -222,7 +222,7 @@ export default function Welcome(): JSX.Element {
                             width: '100%'
                         }}
                     >
-                        アカウントを作成
+                        계정 생성
                     </Button>
                 </Box>
 
