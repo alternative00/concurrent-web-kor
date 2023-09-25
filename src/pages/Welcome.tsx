@@ -69,13 +69,13 @@ export default function Welcome(): JSX.Element {
                 <Box /* top */ display="flex" flexDirection={{ xs: 'column', sm: 'column', md: 'row' }} gap={2}>
                     <Box flex={1}>
                         <Typography variant="h1" fontSize="50px">
-                            世界は1つ。
+                            하나의 세계!
                         </Typography>
                         <Typography variant="h1" fontSize="50px" gutterBottom>
-                            環境は無数。
+                            무한한 환경!
                         </Typography>
                         <Typography>
-                            Concurrentは1つのアカウントで無数のサーバーとつながれる、新しい分散型SNSです。
+                            Concurrent하나의 계정으로 수많은 서버와 연결되는 새로운 탈중앙화화 SNS입니다.
                         </Typography>
                         <Button
                             variant="contained"
@@ -86,33 +86,33 @@ export default function Welcome(): JSX.Element {
                                 width: '100%'
                             }}
                         >
-                            アカウントを作成
+                            계정 생성
                         </Button>
                         <Box pt={2}>
                             <Typography gutterBottom variant="h3">
-                                Concurrentは現在開発中のソフトウェアです。
+                                Concurrent은 현재 개발 중인 소프트웨어입니다.
                             </Typography>
                             <Typography>
-                                絶賛機能追加途中で現在はまだたくさんの機能は使えません。観光程度に遊んでもらえると嬉しいです！
+                                기능 추가 중으로 현재는 아직 많은 기능을 사용할 수는 없습니다. 가볍게 즐겨주세요!
                             </Typography>
                             <Typography>
-                                バグを見つけたり、いいアイディアを思いついたら
+                                버그 발견 혹은 건의 사항
                                 <Link href="https://github.com/totegamma/concurrent-web/issues/new/choose">
-                                    GithubからIssue
+                                    Github에서Issue
                                 </Link>
-                                を建てて今すぐ開発に参加しよう！
+                                를 구축하여 지금 바로 개발에 참여하세요!
                             </Typography>
 
                             <Typography gutterBottom variant="h3" mt={1}>
-                                開発予定の機能
+                                개발 예정 기능
                             </Typography>
-                            <Typography>- メンション</Typography>
-                            <Typography>- Activitypubアカウントのフォロー</Typography>
-                            <Typography>- メディア専用投稿・ユーザーのメディア一覧</Typography>
-                            <Typography>- ミュートなどの各種フィルタリング</Typography>
-                            <Typography>- ネイティブのメディアサーバーオプション</Typography>
-                            <Typography>- URLのプレビューカードの表示</Typography>
-                            <Typography>- 他のユーザーのアクティビティのタイムライン</Typography>
+                            <Typography>- 멘션</Typography>
+                            <Typography>- Activitypub계정 팔로우</Typography>
+                            <Typography>- 미디어 전용 게시글 및 사용자 미디어 목록</Typography>
+                            <Typography>- 뮤트 등의 각종 필터링</Typography>
+                            <Typography>- 네이티브 미디어 서버 옵션</Typography>
+                            <Typography>- URL미리보기 카드 표시</Typography>
+                            <Typography>- 다른 사용자의 활동 타임라인</Typography>
                             <Typography>- etc...</Typography>
                         </Box>
                     </Box>
