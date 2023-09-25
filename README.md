@@ -2,6 +2,8 @@
 Concurrent-world는 분산형 SNS 플랫폼입니다.[Concurrent](https://github.com/totegamma/concurrent)
 이 중 kor은 한글화를위한 테스트용 포크 버전입니다.
 
+This is for the korean translation only.
+
 실제 업데이트 및 관련 사항은 https://github.com/totegamma/concurrent에서 확인하세요
 
 콘커런트는 [concurrent.world](https://concurrent.world)에서 확인하세요
